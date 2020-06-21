@@ -1,0 +1,39 @@
+p{
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}li{
+    
+    font-size: 18px;
+    color: red;
+}
+button{
+    border: 2px solid #1e35cd;
+    color: #1e35cd;
+}
+.color{
+    background-color: tomato;
+}
+.rgb{
+    background-color:rgb(255, 99, 71) ;
+}
+.hex{
+    background-color: #ff6347;
+}
+.hsl{
+    background-color:hsl(9, 100%, 64%) ;
+}
+.rgba{
+background-color:rgba(255, 99, 71, 0.5) ;
+}
+.hsla{
+    background-color:hsla(9, 100%, 64%, 0.5) ;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+} .blue{
+    color: blue;
+}

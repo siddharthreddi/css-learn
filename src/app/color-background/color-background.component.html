@@ -1,0 +1,157 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="card">
+        <div class="card-header card-header-danger">
+            <h4 class="card-title">CSS Background-Color</h4>
+            
+        </div>
+        <div class="card-body">
+          
+          <mat-tab-group>
+            <mat-tab label="Info"> 
+              <br>
+              <br>
+              <p>The CSS background properties are used to define the background effects for elements.
+                
+                </p>
+            <p>Background consists of 5 properties:</p>
+            <ul>
+              <li>Color</li>
+              <li>Image</li>
+              <li>Repeat</li>
+              <li>Attachment</li>
+              <li>Position</li>
+            </ul>
+            
+            
+            </mat-tab>
+            <mat-tab label="Output"> 
+              <br>
+              <br>
+              <mat-grid-list cols="5" rowHeight="2:1">
+                <mat-grid-tile>
+              <button mat-raised-button (click)="col()">Color</button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+          <button mat-raised-button (click)="ima()">Image</button>
+          </mat-grid-tile>
+       
+        <mat-grid-tile >
+          <button mat-raised-button (click)="rep()">Repeat</button>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <button mat-raised-button (click)="att()">Fixed</button>
+        </mat-grid-tile>
+        <mat-grid-tile >
+          <button mat-raised-button (click)="pos()">Scroll</button>
+        </mat-grid-tile>
+      </mat-grid-list>
+      <div *ngIf=color class="color">
+        <body>
+
+          <h1>Hello World!</h1>
+          
+          <p>This page has a light blue background color!</p>
+          
+        </body>
+      </div>
+      <div *ngIf=image class="image">
+        <body>
+
+          <h1>Hello World!</h1>
+          
+          <p>This page has an image as the background!</p>
+          
+          </body>
+      </div>
+      <div *ngIf=repeat class="repeat">
+        <body>
+        <h1>Hello World!</h1>
+          
+        <p>Here, a background image is repeated only horizontally!</p>
+        </body>
+      </div>
+      <div *ngIf=attachment class="attachment">
+        <body>
+
+          <h1>The background-attachment Property</h1>
+          
+          <p>The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page).</p>
+          
+          <p><strong>Tip:</strong> If you do not see any scrollbars, try to resize the browser window.</p>
+          
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          
+          </body>
+      </div>
+      <div *ngIf=position class="position">
+        <body>
+
+          <h1>The background-attachment Property</h1>
+          
+          <p>The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page).</p>
+          
+          <p><strong>Tip:</strong> If you do not see any scrollbars, try to resize the browser window.</p>
+          
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          <p>The background-image is fixed. Try to scroll down the page.</p>
+          
+          </body>
+      </div>
+      
+            </mat-tab>
+            <mat-tab label="Code"> 
+              <br>
+              <br>
+              <img src="../../assets/img/bg.png">
+               </mat-tab>
+           
+          </mat-tab-group>     
+         
+                  
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+                   

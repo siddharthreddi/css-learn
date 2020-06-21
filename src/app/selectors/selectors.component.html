@@ -1,0 +1,63 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="card">
+        <div class="card-header card-header-danger">
+            <h4 class="card-title">CSS Selectors</h4>
+            
+        </div>
+        <div class="card-body">
+          
+          <mat-tab-group>
+            <mat-tab label="Info"> 
+              <br>
+              <br>
+              <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+            
+            </mat-tab>
+            <mat-tab label="Output"> 
+         
+         
+              <mat-grid-list cols="5" rowHeight="2:1">
+                <mat-grid-tile>
+                  <button mat-raised-button (click)="ele()">Element</button>
+                </mat-grid-tile>
+                <mat-grid-tile>
+              <button mat-raised-button (click)="cl()">Class</button>
+              </mat-grid-tile>
+              <mat-grid-tile>
+              <button mat-raised-button (click)="i()">ID</button>
+            </mat-grid-tile>
+           
+            <mat-grid-tile>
+              <button mat-raised-button (click)="uni()">Universal</button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <button mat-raised-button (click)="gr()">Group</button>
+            </mat-grid-tile>
+          </mat-grid-list>
+          <div class="not" *ngIf="not"  >
+            <img src="../../assets/img/Screenshot (70).png">
+          </div>
+          <div class="both" *ngIf="both"  >
+            <img src="../../assets/img/Screenshot (72).png">
+          </div>
+          <div class="padding" *ngIf="padding"  >
+            <img src="../../assets/img/Screenshot (71).png">
+          </div>
+             <div class="margin" *ngIf="margins"  >
+              <img src="../../assets/img/Screenshot (73).png">
+             </div>
+             <div class="margin" *ngIf="group"  >
+              <img src="../../assets/img/Screenshot (74).png">
+            </div>
+            </mat-tab>
+           
+           
+          </mat-tab-group>     
+         
+                  
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+                   

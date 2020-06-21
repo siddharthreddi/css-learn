@@ -1,0 +1,113 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="card">
+        <div class="card-header card-header-danger">
+            <h4 class="card-title">CSS Shadow</h4>
+            
+        </div>
+        <div class="card-body">
+          
+          <mat-tab-group>
+            <mat-tab label="Info"> 
+              <br>
+              <br>
+              With CSS you can add shadow to text and to elements.
+
+              In this chapter you will learn about the following properties
+              <ul>
+                <li>text-shadow</li>
+                <li>box-shadow</li>
+              </ul>
+
+            
+            </mat-tab>
+            <mat-tab label="Output"> 
+          
+              <mat-grid-list cols="4" rowHeight="2:1">
+                <mat-grid-tile>
+                  <mat-form-field>
+                    <mat-label>Select</mat-label>
+                    <mat-select   (selectionChange)="someMethod($event.value)">
+                      <mat-option *ngFor="let food of foods" [value]="food.value" >
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+             
+                </mat-grid-tile>
+                </mat-grid-list>
+            
+             <div *ngIf=Text>
+              <mat-grid-list cols="3" rowHeight="2:1">
+                <mat-grid-tile>
+                  <button mat-raised-button (click)="not()">Nothing</button>
+                </mat-grid-tile>
+                <mat-grid-tile>
+              <button mat-raised-button (click)="sha()">One Shadow</button>
+              </mat-grid-tile>
+              <mat-grid-tile>
+              <button mat-raised-button (click)="ms()">Multiple Shadow</button>
+            </mat-grid-tile>
+           
+           
+          </mat-grid-list>
+        
+          <div class="not" *ngIf="no"  >
+            <h1>Text-shadow effect!</h1>
+
+          </div>
+          <div class="one" *ngIf="one"  >
+            <h1>Text-shadow effect!</h1>
+
+          </div>
+          <div class="multi" *ngIf="multi"  >
+            <h1>Text-shadow effect!</h1>
+          </div>
+          </div>
+          <div *ngIf=box>
+            <mat-grid-list cols="3" rowHeight="2:1">
+              <mat-grid-tile>
+                <button mat-raised-button (click)="notb()">Nothing</button>
+              </mat-grid-tile>
+              <mat-grid-tile>
+            <button mat-raised-button (click)="shab()"> Shadow</button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+            <button mat-raised-button (click)="msb()">Blur Shadow</button>
+          </mat-grid-tile>
+         
+         
+        </mat-grid-list>
+     
+      <div class="notb" *ngIf="nob"  >
+        <div>This is a div element with a box-shadow</div>
+
+      </div>
+      <div class="oneb" *ngIf="oneb"  >
+        <div>This is a div element with a box-shadow</div>
+
+      </div>
+      
+      <div class="multib" *ngIf="multib"  >
+        <div>This is a div element with a box-shadow</div>
+      </div>
+      <br>
+      <br>
+      </div>
+            </mat-tab>
+            <mat-tab label="Code"> 
+              <br>
+              <br>
+              <img src="../../assets/img/shadowt.png">
+         
+              <img src="../../assets/img/shadowb.png">
+               </mat-tab>
+           
+          </mat-tab-group>     
+         
+                  
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+                   

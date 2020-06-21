@@ -1,0 +1,119 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="card">
+        <div class="card-header card-header-danger">
+            <h4 class="card-title">CSS Colors</h4>
+            
+        </div>
+        <div class="card-body">
+          
+          <mat-tab-group>
+            <mat-tab label="Info"> 
+              <br>
+              <br>
+              <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values. 
+                </p>
+            
+            
+            
+            </mat-tab>
+            <mat-tab label="Output"> 
+              <br>
+              <br>
+              <mat-grid-list cols="6" rowHeight="2:1">
+                <mat-grid-tile>
+              <button mat-raised-button (click)="col()">Color</button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+          <button mat-raised-button (click)="rgb()">RGB</button>
+          </mat-grid-tile>
+       
+        <mat-grid-tile >
+          <button mat-raised-button (click)="rgba()">RGBA</button>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <button mat-raised-button (click)="hex()">HEX</button>
+        </mat-grid-tile>
+        <mat-grid-tile >
+          <button mat-raised-button (click)="hsl()">HSL</button>
+        </mat-grid-tile>
+        <mat-grid-tile >
+          <button mat-raised-button (click)="hsla()">HSLA</button>
+        </mat-grid-tile>
+      </mat-grid-list>
+      <div *ngIf=color>
+        <p></p>
+        <div class="color"><p>Tomato</p></div>
+      </div>
+      <div *ngIf=rg>
+        <p>In CSS, a color can be specified as an <span class="red">R</span><span class="green">G</span><span class="blue">B</span> value, using this formula:
+
+          rgb(<span class="red">red</span>,<span class="green"> green</span>,<span class="blue"> blue</span>)
+          
+          Each parameter (<span class="red">red</span>,<span class="green"> green</span>, and<span class="blue"> blue</span>) defines the intensity of the color between 0 and 255.
+          
+          For example, rgb(<span class="red">255</span>,<span class="green">  0</span>,<span class="blue"> 0</span>) is displayed as<span class="red"> red</span>, because<span class="red"> red</span> is set to its highest value (255) and the others are set to 0.
+          
+          To display black, set all color parameters to 0, like this: rgb(<span class="red">0</span>,<span class="green"> 0</span>,<span class="blue"> 0</span>).
+          
+          To display white, set all color parameters to 255, like this: rgb(<span class="red">255</span>,<span class="green"> 255</span>,<span class="blue"> 255</span>).</p>
+        <div class="rgb"><p>rgb(<span class="red">255</span>, ,<span class="green">99</span>, <span class="blue">71</span>)</p></div>
+
+      </div>
+      <div *ngIf=he>
+        <p>In CSS, a color can be specified using a hexadecimal value in the form:
+
+          #<span class="red">rr</span><span class="green">gg</span><span class="blue">bb</span>
+          
+          Where <span class="red">rr (red)</span>,<span class="green"> gg (green)</span> and<span class="blue">bb (blue) </span> are hexadecimal values between 00 and ff (same as decimal 0-255).
+          
+          For example, #<span class="red">ff</span><span class="green">00</span><span class="blue">00</span> is displayed as <span class="red">red</span>, because red is set to its highest value (ff) and the others are set to the lowest value (00).</p>
+        <div class="hex"><p>#<span class="red">ff</span><span class="green">63</span><span class="blue">47</span></p></div>
+
+      </div>
+      <div *ngIf=hs>
+        <p>In CSS, a color can be specified using hue, saturation, and lightness (HSL) in the form:
+
+          hsl(hue, saturation, lightness)
+          
+          Hue is a degree on the color wheel from <span class="red"> 0</span> to 360.<span class="red"> 0</span> is<span class="red"> red</span>, <span class="green"> 120 is green</span>, and <span class="blue">240 is blue </span>.
+          
+          Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+          
+          Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white</p>
+        <div class="hsl"><p>hsl(9, 100%, 64%)</p></div>
+
+      </div>
+      <div *ngIf=rga>
+        <p>RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.
+
+          An <span class="red">R</span><span class="green">G</span><span class="blue">B</span>A color value is specified with:
+          
+          rgba(<span class="red">red</span>,<span class="green">green</span>, <span class="blue">blue</span>, alpha)
+          
+          The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)</p>
+        <div class="rgba"><p>rgba(<span class="red">255</span>,<span class="green">99</span>, <span class="blue">71</span>, 0.5)</p></div>
+
+      </div>
+      <div *ngIf=hsa>
+        <p>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.
+
+          An HSLA color value is specified with:
+          
+          hsla(hue, saturation, lightness, alpha)
+          
+          The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)</p>
+        <div class="hsla"><p>hsla(9, 100%, 64%, 0.5)</p></div>
+
+      </div>
+            </mat-tab>
+           
+           
+          </mat-tab-group>     
+         
+                  
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+                   

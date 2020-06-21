@@ -1,0 +1,25 @@
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+p{
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    border-color: red;
+}li{
+    
+    font-size: 18px;
+    color: red;
+}
+button{
+    border: 2px solid #1e35cd;
+    color: #1e35cd;
+}

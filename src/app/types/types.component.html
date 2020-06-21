@@ -1,0 +1,44 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="card">
+        <div class="card-header card-header-danger">
+            <h4 class="card-title">CSS Ways</h4>
+            
+        </div>
+        <div class="card-body">
+       
+                
+                 <p >When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.
+                  There are three ways of inserting a style sheet:</p>
+                  <ul>
+                    <li>External CSS </li>
+                    <button mat-raised-button (click)="external()">Info</button>
+                    <div *ngIf=ex><p>With an external style sheet, you can change the look of an entire website by changing just one file!
+
+                        Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.</p>
+                    <img src="../../assets/img/Screenshot (66).png"><img src="../../assets/img/Screenshot (67).png">
+                </div>
+                    <li>Internal CSS </li>
+                    <button mat-raised-button (click)="internal()" >Info</button>
+                    <div  *ngIf=in><p>An internal style sheet may be used if one single HTML page has a unique style.
+
+                        The internal style is defined inside the {{style}} element, inside the head section.</p>
+                        <img src="../../assets/img/Screenshot (68).png"></div>
+                    <li>Inline CSS </li>
+                    <button mat-raised-button (click)="inline()"  >Info</button>
+                    <div  *ngIf=line ><p>An inline style may be used to apply a unique style for a single element.
+
+                        To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p>
+                        <img src="../../assets/img/Screenshot (69).png"></div>
+                  </ul>
+    
+              
+                        
+                         
+                  
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+                   
+                   

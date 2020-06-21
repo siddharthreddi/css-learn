@@ -1,0 +1,94 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="card">
+        <div class="card-header card-header-danger">
+            <h4 class="card-title">CSS Display</h4>
+            
+        </div>
+        <div class="card-body">
+          
+          <mat-tab-group>
+            <mat-tab label="Info"> 
+              <br>
+              <br>
+              <p>The display property is the most important CSS property for controlling layout.
+
+                The display property specifies if/how an element is displayed.
+
+                Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.
+                
+                </p>
+            <h5>Block-level Elements </h5>
+            <p>A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
+            <p>Examples of block-level elements:</p>
+            <ul>
+              <li>div</li>
+              <li>h1-h6</li>
+              <li>p</li>
+              <li>form</li>
+              <li>header</li>
+              <li>footer</li>
+              <li>section</li>
+            </ul>
+            <h5>Inline Elements</h5>
+            <p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
+            <p>Examples of inline elements:</p>
+            <ul>
+              <li>span</li>
+              
+              <li>a</li>
+              <li>img</li>
+            
+            </ul>
+            </mat-tab>
+            <mat-tab label="Output"> 
+             
+              <mat-grid-list cols="5" rowHeight="2:1">
+                <mat-grid-tile>
+              <button mat-raised-button (click)="in()">Inline</button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+          <button mat-raised-button (click)="block()">Block</button>
+          </mat-grid-tile>
+       
+        <mat-grid-tile *ngIf=none1>
+          <button mat-raised-button (click)="none()">None</button>
+        </mat-grid-tile>
+        <mat-grid-tile class="none" *ngIf=none2>
+          <button mat-raised-button (click)="none()">Hidden</button>
+        </mat-grid-tile>
+        <mat-grid-tile *ngIf=hidden>
+          <button mat-raised-button (click)="hide()">Hidden</button>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <button mat-raised-button (click)="reset()">Reset</button>
+        </mat-grid-tile>
+      </mat-grid-list>
+      <div  *ngIf="inline"  >
+        <p>Display a list of links as a horizontal menu:</p>
+
+        <ul>
+          <li class="inline">HTML</li>
+          <li class="inline">CSS</li>
+          <li class="inline">JavaScript</li>
+        </ul>
+      </div>
+      <div  *ngIf="blockk"  >
+        <span>A display property with a value of "block" results in</span> <span>a line break between the two elements.</span>
+      </div>
+    
+            </mat-tab>
+            <mat-tab label="Code"> 
+              <br>
+              <br>
+              <img src="../../assets/img/display.png">
+               </mat-tab>
+           
+          </mat-tab-group>     
+         
+                  
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+                   
